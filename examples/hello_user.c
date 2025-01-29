@@ -13,7 +13,7 @@ int main()
 
     vector_push_multiple(&str, "!", 1);            // Push exclamation mark
     
-    printf("%s\n", vector_convert(char, str.buffer));
+    printf("%s\n", vector_buffer(&str, char));
 
     vector_free(&str);                                        // Free the vector
 
